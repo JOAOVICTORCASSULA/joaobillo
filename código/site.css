@@ -62,6 +62,14 @@ h1, h2, h3 {
     background-color: #2a2a2a; /* Cor de fundo dos contêineres de projeto */
     padding: 15px; /* Espaçamento interno do contêiner */
     margin: 10px 0; /* Margem entre os contêineres */
+    border-radius: 20px;
+}
+
+.projeto2 {
+    background-color: #1b1a1a; /* Cor de fundo dos contêineres de projeto */
+    padding: 15px; /* Espaçamento interno do contêiner */
+    margin: 10px 0; /* Margem entre os contêineres */
+    border-radius: 20px;
 }
 
 /* Estilos para o rodapé */
@@ -116,4 +124,49 @@ nav a, a {
 nav a:hover, a:hover {
     color: #a02c90; /* Um rosa ao passar o mouse */
 }
+
+/* Estilos para a seção de linguagens */
+.linguagens {
+    display: flex; /* Alinha o texto e a imagem lado a lado */
+    gap: 70px; /* Espaçamento entre a imagem e o texto */
+}
+
+.linguagens-imagem {
+    width: 500px; /* Aumenta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem não se distorça */
+    border: none; /* Remove qualquer borda */
+    border-radius: 0; /* Remove qualquer arredondamento */
+    margin-left: 10px; /* Joga a imagem para a direita */
+}
+
+.h2-programing {
+    color: #d8b9f2;
+    text-align: center; /* Centraliza o título */
+}
+
+.educacao-container {
+    display: flex; /* Alinha o conteúdo em uma linha */ 
+    gap: 70px; /* Espaçamento entre o texto e a imagem */
+}
+
+.educacao-imagem {
+    width: 500px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção */
+    object-fit: contain; /* Garante que a imagem não se distorça */
+    border: none; /* Remove bordas */
+    border-radius: 0; /* Remove o arredondamento */
+    margin-left: auto; /* Move a imagem para a direita */
+}
+
+.educacao-container p {
+    flex: 1; /* Faz o parágrafo ocupar o espaço restante ao lado da imagem */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.h2-educacao {
+    color: #d8b9f2;
+    text-align: center; /* Centraliza o título */
+}
+
 
