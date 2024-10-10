@@ -76,7 +76,7 @@ h1, h2, h3 {
 }
 
 .projeto2 {
-    background-color: #181717; /* Cor de fundo dos contêineres de projeto */
+    background-color: #1e1d1d; /* Cor de fundo dos contêineres de projeto */
     padding: 15px; /* Espaçamento interno do contêiner */
     margin: 10px 0; /* Margem entre os contêineres */
     border-radius: 20px;
@@ -191,4 +191,37 @@ footer {
     .linguagens-imagem, .educacao-imagem {
         width: 90%; /* Largura da imagem em telas menores */
     }
+}
+
+.github-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #d8b9f2; /* Cor padrão do link */
+    transition: color 0.3s; /* Suaviza a transição de cor */
+}
+
+.github-link:hover {
+    color: #a02c90; /* Cor lilás ao passar o mouse */
+}
+
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px;
+    background-color: #d8b9f2;  /* Roxo neon */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section.appear {
+    opacity: 1;
 }
