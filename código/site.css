@@ -1,0 +1,119 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte da página */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #121212; /* Cor de fundo escura */
+    color: #ffffff; /* Cor do texto branca */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #1e1e1e; /* Cor de fundo do cabeçalho */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 15px; /* Margem entre os itens da lista */
+}
+
+/* Estilos para os links da navegação */
+nav a {
+    color: #d8b9f2; /* Cor dos links (lilás brilhante) */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: transform 0.2s ease, color 0.2s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+/* Efeito de aumento nos links ao passar o mouse */
+nav a:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do link */
+    color: #a02c90; /* Cor do link ao passar o mouse (um rosa) */
+}
+
+/* Estilos para as imagens */
+img {
+    width: 180px; /* Largura fixa da imagem */
+    height: 180px; /* Altura fixa da imagem */
+    object-fit: cover; /* Ajusta a imagem para se adaptar ao quadrado */
+    border-radius: 50%; /* Torna a imagem redonda */
+    border: 5px solid #d8b9f2; /* Bordas lilás brilhante */
+}
+
+/* Estilos para as seções da página */
+section {
+    padding: 40px 20px; /* Espaçamento interno das seções */
+}
+
+/* Estilos para os cabeçalhos */
+h1, h2, h3 {
+    color: #d8b9f2; /* Cor lilás brilhante para os cabeçalhos */
+}
+
+/* Estilos para os contêineres de projetos */
+.projeto {
+    background-color: #2a2a2a; /* Cor de fundo dos contêineres de projeto */
+    padding: 15px; /* Espaçamento interno do contêiner */
+    margin: 10px 0; /* Margem entre os contêineres */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #1e1e1e; /* Cor de fundo do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Espaçamento interno do rodapé */
+    position: relative; /* Posição relativa para o rodapé */
+    bottom: 0; /* Fixa o rodapé na parte inferior */
+    width: 100%; /* Largura total do rodapé */
+}
+
+/* Estilos para os ícones sociais */
+.social-icon {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px; /* Tamanho dos ícones */
+    transition: transform 0.2s ease; /* Animação suave ao passar o mouse */
+    border-radius: 0; /* Garante que não haja bordas arredondadas */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do ícone */
+    border: none; /* Remove qualquer borda do ícone */
+}
+
+/* Estilos para a imagem dentro dos ícones sociais */
+.social-icon img {
+    width: 100%; /* Deixa a imagem ocupar todo o ícone */
+    height: 100%; /* Altura da imagem ocupa todo o ícone */
+    object-fit: cover; /* Assegura que a imagem preencha o ícone sem distorção */
+    border-radius: 0; /* Remove bordas arredondadas para deixar quadrado */
+}
+
+/* Efeito de aumento nos ícones sociais ao passar o mouse */
+.social-icon:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+    filter: brightness(1.2); /* Aumenta o brilho ao passar o mouse */
+}
+
+/* Estilos para os contêineres de ícones de contato */
+.contato-icones {
+    display: flex; /* Alinha os ícones lado a lado */
+    justify-content: center; /* Centraliza os ícones */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+/* Reaproveita estilos de navegação para garantir consistência */
+nav a, a {
+    color: #d8b9f2; /* Cor dos links (lilás brilhante) */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Efeito de aumento nos links ao passar o mouse */
+nav a:hover, a:hover {
+    color: #a02c90; /* Um rosa ao passar o mouse */
+}
+
