@@ -172,17 +172,6 @@ footer {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-    /* Para telas menores que 768px */
-    nav ul {
-        display: flex; /* Alinha os itens em linha */
-        flex-direction: column; /* Muda a direção para coluna */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Margem vertical entre os itens */
-    }
-
     .linguagens, .educacao-container {
         flex-direction: column; /* Alinha a imagem e o texto em coluna */
         align-items: center; /* Centraliza os itens */
@@ -209,7 +198,7 @@ footer {
     right: 20px;
     display: none;
     padding: 10px;
-    background-color: #d8b9f2;  /* Roxo neon */
+    background-color: rgba(106, 13, 173, 0.9);;  /* Roxo neon */
     color: white;
     border: none;
     border-radius: 5px;
@@ -225,3 +214,86 @@ section {
 section.appear {
     opacity: 1;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(106, 13, 173, 0.9); /* Roxo transparente */
+    z-index: 1000;
+    transition: background-color 0.5s ease;
+}
+
+/* Estilos do Botão de Menu */
+.menu-btn {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10; /* Para garantir que o botão fique acima do menu */
+}
+
+.menu-btn-burger {
+    width: 100%;
+    height: 4px;
+    background-color: #bb86fc; /* Purple neon */
+    transition: all 0.3s ease;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #bb86fc;
+    transition: all 0.3s ease;
+}
+
+.menu-btn-burger::before {
+    top: -10px;
+}
+
+.menu-btn-burger::after {
+    top: 10px;
+}
+
+/* Menu Oculto */
+.nav-hidden {
+    display: none;
+}
+
+.nav-visible {
+    display: block;
+}
+
+/* Animação quando o menu é ativado */
+.menu-btn.open .menu-btn-burger {
+    transform: rotate(30deg);
+}
+
+.menu-btn.open .menu-btn-burger::before {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+    top: 0;
+    opacity: 0;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .nav {
+        /* Adicione quaisquer estilos para o menu aqui */
+        position: absolute; /* Para sobrepor o conteúdo */
+        top: 50px; /* Abaixo do botão */
+        left: 0;
+        right: 0;
+        background-color: #fff; /* Fundo do menu */
+        z-index: 9; /* Para garantir que o menu fique abaixo do botão */
+        transition: all 0.3s ease; /* Suavização para a transição */
+    }
+}
+
+  

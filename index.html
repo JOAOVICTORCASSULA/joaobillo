@@ -9,7 +9,11 @@
 </head>
 <body>
     <header>
-        <nav>
+        <!-- Botão de Menu (Hamburger) -->
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="menu-btn-burger"></div>
+        </div>
+        <nav id="nav-menu" class="nav-hidden">
             <ul>
                 <li><a href="#sobre">About</a></li>
                 <li><a href="#projetos">Projects</a></li>
@@ -17,9 +21,11 @@
                 <li><a href="#educacao">Education</a></li>
             </ul>
         </nav>
+  
         <img src="imagens/eu.jpg" alt="João Victor" class="parallax" data-speed="0.5">
 
         <h1>João Victor Cassula Billó</h1>
+        <p class="typing-text"></p>
         <p>Developer | Student</p>
     </header>
     
@@ -106,7 +112,7 @@
     </footer>
 </body>
 <!-- Botão de voltar ao topo -->
-<button id="backToTop">Top</button>
+<button id="backToTop"></button>
 
 <!-- Inclui o arquivo de JavaScript externo -->
 <script src="código/firula.js"></script>
