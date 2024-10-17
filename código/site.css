@@ -1,212 +1,57 @@
 /* Estilos gerais do corpo da página */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte da página */
-    margin: 0; /* Remove as margens padrão */
-    padding: 0; /* Remove o preenchimento padrão */
-    background-color: #121212; /* Cor de fundo escura */
-    color: #ffffff; /* Cor do texto branca */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-/* Estilos para o cabeçalho */
-header {
-    background-color: #1e1e1e; /* Cor de fundo do cabeçalho */
-    padding: 20px; /* Espaçamento interno do cabeçalho */
-    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+/* Estilos para cabeçalho e rodapé */
+header, footer {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Estilos para a navegação */
 nav {
-    display: flex; /* Define o contêiner como flexível */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    margin-top: 20px; /* Margem superior para separar do cabeçalho */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 nav ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o preenchimento padrão */
-    display: flex; /* Torna a lista um contêiner flexível */
-    gap: 15px; /* Espaçamento entre os itens da lista */
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
-nav ul li {
-    margin: 0; /* Remove margens dos itens da lista */
-}
-
-/* Estilos para os links da navegação */
 nav a {
-    color: #d8b9f2; /* Cor dos links (lilás brilhante) */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    padding: 10px 15px; /* Adiciona preenchimento para criar um botão */
-    border-radius: 5px; /* Bordas arredondadas nos links */
-    transition: transform 0.2s ease, color 0.2s ease; /* Efeito de transição suave ao passar o mouse */
-}
-
-/* Efeito de aumento nos links ao passar o mouse */
-nav a:hover {
-    transform: scale(1.1); /* Aumenta o tamanho do link */
-    color: #a02c90; /* Cor do link ao passar o mouse (um rosa) */
-    background-color: rgba(216, 185, 242, 0.2); /* Adiciona um fundo levemente colorido ao passar o mouse */
-}
-
-/* Estilos para as imagens */
-img {
-    width: 180px; /* Largura fixa da imagem */
-    height: 180px; /* Altura fixa da imagem */
-    object-fit: cover; /* Ajusta a imagem para se adaptar ao quadrado */
-    border-radius: 50%; /* Torna a imagem redonda */
-    border: 5px solid #d8b9f2; /* Bordas lilás brilhante */
-}
-
-/* Estilos para as seções da página */
-section {
-    padding: 40px 20px; /* Espaçamento interno das seções */
-}
-
-/* Estilos para os cabeçalhos */
-h1, h2, h3 {
-    color: #d8b9f2; /* Cor lilás brilhante para os cabeçalhos */
-}
-
-/* Estilos para os contêineres de projetos */
-.projeto {
-    background-color: #2a2a2a; /* Cor de fundo dos contêineres de projeto */
-    padding: 15px; /* Espaçamento interno do contêiner */
-    margin: 10px 0; /* Margem entre os contêineres */
-    border-radius: 20px;
-}
-
-.projeto2 {
-    background-color: #1e1d1d; /* Cor de fundo dos contêineres de projeto */
-    padding: 15px; /* Espaçamento interno do contêiner */
-    margin: 10px 0; /* Margem entre os contêineres */
-    border-radius: 20px;
-}
-
-/* Estilos para o rodapé */
-footer {
-    background-color: #1e1e1e; /* Cor de fundo do rodapé */
-    text-align: center; /* Centraliza o texto do rodapé */
-    padding: 10px; /* Espaçamento interno do rodapé */
-    width: 100%; /* Largura total do rodapé */
-    display: flex; /* Usar flexbox para centralizar conteúdo */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente (opcional) */
-    position: static; /* Posição estática para que o footer fique no fluxo normal */
-}
-
-.contato-icones {
-    display: flex; /* Define como um contêiner flexível */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 20px; /* Espaçamento entre os ícones */
-    padding: 20px; /* Espaçamento interno, opcional */
-}
-
-
-/* Estilos para os ícones sociais */
-.social-icon {
-    width: 40px; /* Tamanho dos ícones */
-    height: 40px; /* Tamanho dos ícones */
-    transition: transform 0.2s ease; /* Animação suave ao passar o mouse */
-    border-radius: 0; /* Garante que não haja bordas arredondadas */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do ícone */
-    border: none; /* Remove qualquer borda do ícone */
-}
-
-/* Estilos para a imagem dentro dos ícones sociais */
-.social-icon img {
-    width: 100%; /* Deixa a imagem ocupar todo o ícone */
-    height: 100%; /* Altura da imagem ocupa todo o ícone */
-    object-fit: cover; /* Assegura que a imagem preencha o ícone sem distorção */
-    border-radius: 0; /* Remove bordas arredondadas para deixar quadrado */
-}
-
-/* Efeito de aumento nos ícones sociais ao passar o mouse */
-.social-icon:hover {
-    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
-    filter: brightness(1.2); /* Aumenta o brilho ao passar o mouse */
-}
-
-/* Estilos para a seção de linguagens */
-.linguagens {
-    display: flex; /* Alinha o texto e a imagem lado a lado */
-    gap: 70px; /* Espaçamento entre a imagem e o texto */
-}
-
-.linguagens-imagem {
-    width: 500px; /* Aumenta a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: contain; /* Garante que a imagem não se distorça */
-    border: none; /* Remove qualquer borda */
-    border-radius: 0; /* Remove qualquer arredondamento */
-    margin-left: 10px; /* Joga a imagem para a direita */
-}
-
-.h2-programing {
     color: #d8b9f2;
-    text-align: center; /* Centraliza o título */
-}
-
-.educacao-container {
-    display: flex; /* Alinha o conteúdo em uma linha */ 
-    gap: 70px; /* Espaçamento entre o texto e a imagem */
-}
-
-.educacao-imagem {
-    width: 500px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção */
-    object-fit: contain; /* Garante que a imagem não se distorça */
-    border: none; /* Remove bordas */
-    border-radius: 0; /* Remove o arredondamento */
-    margin-left: auto; /* Move a imagem para a direita */
-}
-
-.educacao-container p {
-    flex: 1; /* Faz o parágrafo ocupar o espaço restante ao lado da imagem */
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
-}
-
-.h2-educacao {
-    color: #d8b9f2;
-    text-align: center; /* Centraliza o título */
-}
-
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
-    .linguagens, .educacao-container {
-        flex-direction: column; /* Alinha a imagem e o texto em coluna */
-        align-items: center; /* Centraliza os itens */
-    }
-
-    .linguagens-imagem, .educacao-imagem {
-        width: 90%; /* Largura da imagem em telas menores */
-    }
-}
-
-.github-link {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #d8b9f2; /* Cor padrão do link */
-    transition: color 0.3s; /* Suaviza a transição de cor */
-}
-
-.github-link:hover {
-    color: #a02c90; /* Cor lilás ao passar o mouse */
-}
-
-.to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    padding: 10px;
-    background-color: rgba(106, 13, 173, 0.9);;  /* Roxo neon */
-    color: white;
-    border: none;
+    text-decoration: none;
+    padding: 10px 15px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: opacity 0.4s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
+nav a:hover {
+    transform: scale(1.1);
+    color: #a02c90;
+    background-color: rgba(216, 185, 242, 0.2);
+}
+
+/* Estilos para imagens */
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Estilos para seções e cabeçalhos */
 section {
+    padding: 40px 20px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -215,28 +60,96 @@ section.appear {
     opacity: 1;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(106, 13, 173, 0.9); /* Roxo transparente */
-    z-index: 1000;
-    transition: background-color 0.5s ease;
+h1, h2, h3 {
+    color: #d8b9f2;
 }
 
-/* Estilos do Botão de Menu */
+/* Estilos para contêineres de projetos */
+.projeto, .projeto2 {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.projeto {
+    background-color: #2a2a2a;
+}
+
+.projeto2 {
+    background-color: #1e1d1d;
+}
+
+/* Estilos para ícones sociais */
+.contato-icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Seções de linguagens e educação */
+.linguagens, .educacao-container {
+    display: flex;
+    gap: 70px;
+}
+
+.linguagens-imagem, .educacao-imagem {
+    width: 500px;
+    height: auto;
+    object-fit: contain;
+    margin-left: 10px; /* Ajustar conforme necessário */
+}
+
+.educacao-container p {
+    flex: 1;
+    text-align: left;
+}
+
+/* Estilos do botão "para o topo" */
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px;
+    background-color: rgba(106, 13, 173, 0.9);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+/* Estilos para o botão de menu */
 .menu-btn {
     position: relative;
     width: 30px;
     height: 25px;
     cursor: pointer;
-    z-index: 10; /* Para garantir que o botão fique acima do menu */
+    z-index: 10;
 }
 
 .menu-btn-burger {
     width: 100%;
     height: 4px;
-    background-color: #bb86fc; /* Purple neon */
+    background-color: #bb86fc;
     transition: all 0.3s ease;
 }
 
@@ -267,7 +180,7 @@ section.appear {
     display: block;
 }
 
-/* Animação quando o menu é ativado */
+/* Animação do menu ao ser ativado */
 .menu-btn.open .menu-btn-burger {
     transform: rotate(30deg);
 }
@@ -282,18 +195,61 @@ section.appear {
     opacity: 0;
 }
 
-/* Estilos Responsivos */
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
-    .nav {
-        /* Adicione quaisquer estilos para o menu aqui */
-        position: absolute; /* Para sobrepor o conteúdo */
-        top: 50px; /* Abaixo do botão */
-        left: 0;
-        right: 0;
-        background-color: #fff; /* Fundo do menu */
-        z-index: 9; /* Para garantir que o menu fique abaixo do botão */
-        transition: all 0.3s ease; /* Suavização para a transição */
+    .linguagens, .educacao-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .linguagens-imagem, .educacao-imagem {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-visible {
+        display: flex;
+        flex-direction: column;
+        background-color: #1e1e1e;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 100;
     }
 }
 
-  
+/* Estilos para o link do GitHub */
+.github-link {
+    display: inline-block; /* Torna o link um bloco para aplicar padding */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #2a2a2a; /* Cor de fundo do botão */
+    color: #bb86fc; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+/* Efeito ao passar o mouse */
+.github-link:hover {
+    background-color: #444; /* Muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+/* Efeito de foco para acessibilidade */
+.github-link:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.9); /* Adiciona um brilho ao foco */
+}
