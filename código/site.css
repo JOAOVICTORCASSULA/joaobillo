@@ -47,6 +47,8 @@ img {
     width: 180px;
     height: 180px;
     object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d8b9f2;
 }
 
 /* Estilos para seções e cabeçalhos */
