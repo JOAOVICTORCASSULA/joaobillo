@@ -58,20 +58,18 @@ const typewriter = (element, text, delay) => {
     }, delay); // Delay entre os caracteres
 };
 
-// Ao carregar a página, inicia a animação de digitação no título
+// Ao carregar a página, inicia a animação de digitação no título e no parágrafo
 document.addEventListener('DOMContentLoaded', () => {
     const titulo = document.querySelector('h1'); // Seleciona o título
-    titulo.innerHTML = ''; // Limpa o texto inicial
-    typewriter(titulo, 'João Victor Cassula Billó', 150); // Coloca o efeito de digitação
+    const paragrafo = document.querySelector('p'); // Seleciona o parágrafo
+    titulo.innerHTML = ''; // Limpa o texto inicial do título
+    paragrafo.innerHTML = ''; // Limpa o texto inicial do parágrafo
+    typewriter(titulo, 'João Victor Cassula Billó', 150); // Coloca o efeito de digitação no título
+
+    // Adiciona um atraso para o parágrafo começar a digitar após o título
+    setTimeout(() => {
+        typewriter(paragrafo, 'Developer | Student', 150); // Coloca o efeito de digitação no parágrafo
+    }, titulo.innerHTML.length * 150 + 500); // Calcula o atraso baseado no tempo de digitação do título
 });
 
-// Efeito de brilho nos botões ao passar o mouse
-const buttons = document.querySelectorAll('button, .social-icon'); // Seleciona botões e ícones sociais
-buttons.forEach(button => {
-    button.addEventListener('mouseenter', () => {
-        button.style.boxShadow = '0 0 15px 5px #6A0DAD'; // Brilho roxo neon
-    });
-    button.addEventListener('mouseleave', () => {
-        button.style.boxShadow = 'none'; // Remove o brilho
-    });
-});
+
