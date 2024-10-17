@@ -47,6 +47,9 @@ img {
     width: 180px;
     height: 180px;
     object-fit: cover;
+}
+
+.parallax {
     border-radius: 50%;
     border: 5px solid #d8b9f2;
 }
